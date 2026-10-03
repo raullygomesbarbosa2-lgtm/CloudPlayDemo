@@ -23,7 +23,7 @@ jobs:
         with:
           gradle-version: '8.9'
       - name: Unpack Android source
-        run: unzip -q CloudPlayDemo-source.zip -d source
+        run: unzip -q CloudPlayDemo-source-v2.zip -d source
       - name: Build APK
         working-directory: source/CloudPlayDemo
         run: gradle :app:assembleDebug
